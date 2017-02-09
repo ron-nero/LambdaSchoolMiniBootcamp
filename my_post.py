@@ -1,11 +1,11 @@
 import requests
  
-url = 'https://LambdaSchool.com/contact'
+url = 'http://lambdaschool.com/contact-form'
 comment = {
- 	'email' : 'ronstoppable107@gmail.com',
+ 	'name' : 'Ron',
     'lastname' : 'N',
     'message': 'Hi, this is the Purge.',
-    'firstname': 'Ron'
+    'email': 'ronstoppable107@gmail.com'
 }
 
 r = requests.post(url, json = comment)
